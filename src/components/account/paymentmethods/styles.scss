@@ -1,0 +1,87 @@
+.form-payments {
+    margin: auto;
+    width: 80%;
+    display: block;
+    flex-wrap: wrap;
+}
+.form-payments > button {
+    background-color: #50b9ea;
+    padding: 0.5em 1em;
+    color: white;
+    border-radius: 1em;
+    border: 0;
+    font-size: 1.3em;
+    -webkit-box-shadow: 0px 0px 51px 0px #50b9ea;
+    -moz-box-shadow: 0px 0px 51px 0px #50b9ea;
+    box-shadow: 0px 0px 51px 0px #50b9ea;
+    margin: auto;
+    display: flex;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.form-group-payments-wrapper {
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+.form-group-payments-wrapper > textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: white;
+    border-radius: 0.5e;
+    height: 80px;
+    padding: 1em;
+    resize: none;
+}
+.form-group-payments-wrapper > input {
+    border: 0 !important;
+    outline: none;
+    background-color: transparent;
+    padding: 0.5em;
+    width: 100%;
+}
+.form-group-payments {
+    margin: 1em 0;
+    display: block;
+}
+.form-group-payment-wrapper-checkbox {
+    display: flex;
+    margin: 1em 0;
+}
+.checkbox-payments {
+    margin-right: 0.5em;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+}
+.form-group-payment-wrapper-checkbox > input {
+    display: none;
+}
+.form-group-payment-wrapper-checkbox > input[type="radio"]:checked + div {
+    background-color: #3067b2;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+}
+.form-group-payment-wrapper-checkbox > img {
+    width: 40px;
+    object-fit: contain;
+    margin: 0 0.5em;
+}
+@media (max-width: 1000px) {
+    .form-group-payments-wrapper {
+        width: 100%;
+    }
+}
+@media (max-width: 950px) {
+    .form-payments {
+        width: 70%;
+    }
+}
+@media (max-width: 950px) {
+    .form-payments {
+        width: 100%;
+    }
+}

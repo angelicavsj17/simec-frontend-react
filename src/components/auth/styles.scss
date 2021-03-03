@@ -1,0 +1,113 @@
+@import "../../styles/_variables";
+
+.auth-box {
+    position: absolute;
+    width: 850px;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.6s linear;
+}
+.appear-isvisible {
+    visibility: visible;
+    opacity: 1;
+}
+.welcome-box {
+    margin: auto;
+    background: linear-gradient(180deg, #4a72af 0%, #325c96 35%, $main-color);
+    width: 40%;
+    height: 350px;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    display: block;
+    padding: 2em 2em;
+}
+
+.auth-logos-wrapper {
+    display: flex;
+}
+
+.auth-logos-wrapper > img {
+    margin: 1em 0;
+    width: 55%;
+    padding-right: 1.4em;
+    border-right: 1px solid white;
+    object-fit: contain;
+}
+.auth-logos-wrapper div {
+    margin: 1em 0;
+    width: 45%;
+}
+
+.powered-by {
+    margin: 1em auto;
+    display: block;
+    text-align: center;
+}
+
+.welcome-box-logo {
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+}
+
+.auth-logos-wrapper div > img {
+    padding-left: 1.4em;
+    width: 100%;
+}
+
+.sign-in-box {
+    margin: auto;
+    width: 60%;
+    height: 450px;
+    background-color: white;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+}
+
+.welcome-title {
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+@media (max-width: 1050px) {
+    .auth-box {
+        display: block;
+        width: 100%;
+    }
+    .welcome-box {
+        width: 400px;
+        height: auto;
+    }
+    .sign-in-box {
+        width: 400px;
+        border-bottom-left-radius: 3em;
+        border-top-right-radius: 0;
+        margin-bottom: 1em;
+    }
+    .welcome-box {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 3em;
+        margin-top: 0.5em;
+    }
+}
+@media (max-width: 800px) {
+    .welcome-box {
+        width: 90%;
+        height: auto;
+    }
+    .sign-in-box {
+        width: 90%;
+    }
+}

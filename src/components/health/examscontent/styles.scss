@@ -1,0 +1,36 @@
+.exams-container > * {
+    width: 20%;
+}
+
+.exams-list-wrapper {
+    margin: 1em 0;
+}
+.exams-header2 {
+    display: none;
+}
+.down {
+    cursor: pointer;
+}
+.not-available {
+    margin-top: 2em;
+    margin-left: 1em;
+}
+@media (max-width: 950px) {
+    .exams-container {
+        display: block !important;
+        border-bottom: 1px solid black;
+    }
+    .exams-container > div {
+        border-right: 0;
+    }
+    .exams-container > * {
+        width: 100%;
+    }
+    .exams-th {
+        display: none !important;
+    }
+    .exams-header2 {
+        display: block;
+        font-weight: 900;
+    }
+}

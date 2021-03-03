@@ -1,0 +1,147 @@
+.calendar-contain-wrapper {
+    display: flex;
+}
+.left-calendar-contain {
+    width: 90%;
+    height: 100%;
+    overflow-y: scroll;
+    color: white;
+    padding-left: 350px;
+    max-height: 500px;
+}
+.left-calendar-contain::-webkit-scrollbar {
+    width: 10px;
+}
+.left-calendar-contain::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background-color: rgba(129, 129, 129, 0.699);
+}
+
+.left-calendar-contain::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5);
+    background-color: rgba(129, 129, 129, 0.699);
+}
+.right-calendar-contain {
+    padding: 1em;
+    width: 50%;
+    color: black;
+}
+.card-calendar {
+    border-radius: 1em;
+    margin: 1em 0.5em;
+    padding: 1em;
+    position: relative;
+    cursor: pointer;
+}
+.card-calendar-header {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.card-calendar > h3 {
+    text-align: end;
+    margin: 0.5em 0;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+.card-calendar > h4 {
+    text-align: end;
+    margin: 1em;
+    font-weight: 400;
+}
+.calendar-day {
+    padding: 0.5em;
+    background-color: rgb(50 92 127);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-top: -30px;
+    margin-left: -10px;
+}
+.calendar-day > span {
+    margin: auto;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+}
+.consult-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.consult-title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.time-title {
+    font-weight: 600;
+    text-align: center;
+    margin: auto 0;
+}
+.right-calendar-contain > h3 {
+    margin: 1em 0;
+}
+.doctor-info-calendar {
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+.doctor-info-calendar > img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.doctor-address {
+    display: block;
+}
+.doctor-address > span {
+    display: block;
+    font-weight: 600;
+}
+.doctor-info-calendar > i {
+    color: rgb(40 85 146);
+    font-size: 1.5em;
+}
+.right-calendar-contain > button {
+    background-color: #50b9ea;
+    border: 0;
+    color: white;
+    padding: 0.3em 1em;
+    border-radius: 0.4em;
+    font-size: 1.4em;
+    margin: 1em auto;
+    display: block;
+    font-weight: 100;
+    width: 70%;
+    -webkit-box-shadow: 0px 0px 51px 0px #50b9ea;
+    -moz-box-shadow: 0px 0px 51px 0px #50b9ea;
+    box-shadow: 0px 0px 51px 0px #50b9ea;
+    cursor: pointer;
+}
+@media (max-width: 1100px) {
+    .calendar-contain-wrapper {
+        display: block;
+    }
+    .left-calendar-contain {
+        width: 100%;
+    }
+    .right-calendar-contain {
+        width: 100%;
+        padding-left: 350px;
+    }
+}
+@media (max-width: 800px) {
+    .left-calendar-contain {
+        width: 100%;
+        padding-left: 0;
+        padding: 1em;
+    }
+    .right-calendar-contain {
+        width: 100%;
+        padding-left: 0;
+        padding: 1.5em;
+    }
+}

@@ -1,0 +1,37 @@
+.frequent-card {
+    padding: 0.6em 1.1em;
+    display: flex;
+    width: 400px;
+    background-color: rgb(48 103 178);
+    color: white;
+    border-radius: 1em;
+    margin: 1em 0;
+    cursor: pointer;
+}
+.frequent-card > i {
+    height: fit-content;
+    margin: auto 0.5em;
+}
+.frequent-card-paragraph {
+    width: 400px;
+    max-height: 500px;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+}
+.frequent-card-paragraph-hidden {
+    max-height: 0;
+}
+.frequent-card-paragraph-icon-rotate {
+    transform: rotate(90deg);
+}
+.icon-transition {
+    transition: all 0.2s ease-out;
+}
+@media (max-width: 600px) {
+    .frequent-card {
+        width: 100%;
+    }
+    .frequent-card-paragraph {
+        width: 100%;
+    }
+}

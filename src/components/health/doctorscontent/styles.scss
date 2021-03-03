@@ -1,0 +1,126 @@
+@import "../../../styles/_variables";
+.doctors-container {
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin-left: 350px;
+    width: -webkit-fill-available;
+    height: 100%;
+}
+
+.doctors-container > h4 {
+    font-size: 2em;
+    border-bottom: 3px solid #0373a2;
+    width: fit-content;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    padding: 15% 0;
+    flex-wrap: wrap;
+}
+.search-box > * {
+    width: 50%;
+    margin: auto;
+}
+
+.city-wrapper {
+    display: flex;
+}
+.city-wrapper > div {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.specialty-wrapper {
+    display: flex;
+}
+.city-wrapper > div > span {
+    padding: 0.5em 1.3em;
+    background-color: $bg-main-color;
+    border-radius: 1em;
+    color: white;
+}
+.city-wrapper > div > select {
+    width: 13em;
+    border-radius: 1em;
+    outline: none;
+}
+.specialty-wrapper > div > span {
+    padding: 0.5em 1.3em;
+    background-color: $bg-main-color;
+    border-radius: 1em;
+    color: white;
+    width: auto;
+}
+.specialty-wrapper > div > select {
+    width: 13em;
+    border-radius: 1em;
+    outline: none;
+}
+.specialty-wrapper > div {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.search-button {
+    width: 10em;
+}
+@media (max-width: 1000px) {
+    .search-box {
+        display: block;
+    }
+    .search-box > div {
+        margin: 0;
+    }
+    .search-box > div > div > span {
+        width: 8em;
+    }
+    .doctors-container {
+        margin-left: 350px;
+    }
+    .doctors-container > h4 {
+        margin: 0.5em;
+    }
+    .city-wrapper > div > * {
+        display: block;
+        width: -webkit-fill-available !important;
+        padding: 0.5em 1.3em;
+        margin: 1em;
+    }
+    .search-box > * {
+        width: 100% !important;
+    }
+    .city-wrapper > div {
+        display: block;
+        width: 90% !important;
+    }
+
+    .specialty-wrapper > div > * {
+        display: block;
+        width: -webkit-fill-available !important;
+        padding: 0.5em 1.3em;
+        margin: 1em;
+    }
+    .specialty-wrapper > div {
+        display: block;
+        width: 90% !important;
+        margin: auto;
+    }
+    .city-wrapper > div {
+        display: block;
+        width: 90% !important;
+        margin: auto;
+    }
+}
+@media (max-width: 800px) {
+    .search-button {
+        width: 90%;
+    }
+    .doctors-container {
+        margin-left: 370px;
+    }
+}

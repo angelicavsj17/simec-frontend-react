@@ -1,0 +1,107 @@
+@import "../../styles/_variables";
+
+.login-form-wrapper {
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-left: 2px solid $third-color;
+    height: -webkit-fill-available;
+    display: block;
+}
+
+.login-form-wrapper > h5 {
+    color: #3e6192;
+    font-size: 2.5em;
+    text-align: end;
+    font-weight: 300;
+    height: fit-content;
+    width: 100%;
+    padding-right: 0.7em;
+    display: block;
+}
+
+.login-form-wrapper > form {
+    padding: 0 5em;
+    display: block;
+}
+
+.form-group > input {
+    display: block;
+    width: 100%;
+    padding: 0.1em;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 1em;
+}
+
+.form-group > label {
+    color: black;
+    font-size: 0.9em;
+}
+.form-group {
+    margin-top: 0.2em;
+}
+
+.btn-forgot-password span a {
+    border: 0;
+    background-color: transparent;
+    margin: 1em auto;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-not-registred span {
+    border: 0;
+    background-color: transparent;
+    margin: 1em auto;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-not-registred span strong a {
+    color: black;
+}
+
+.btn-sign-in {
+    background-color: $third-color;
+    border: 0;
+    color: white;
+    padding: 0.3em 1em;
+    border-radius: 0.4em;
+    font-size: 1.4em;
+    margin: auto;
+    display: block;
+    font-weight: 100;
+    width: 70%;
+    -webkit-box-shadow: 0px 0px 51px 0px $third-color;
+    -moz-box-shadow: 0px 0px 51px 0px $third-color;
+    box-shadow: 0px 0px 51px 0px $third-color;
+    cursor: pointer;
+}
+@media (max-width: 1050px) {
+    .login-form-wrapper > h5 {
+        padding-right: 0 !important;
+        font-size: 1.5em !important;
+        text-align: start !important;
+        margin-left: 0.5em;
+        margin-top: 0.5em;
+    }
+    .login-form-wrapper > form {
+        padding: 0 0.5em;
+    }
+    .login-form-wrapper {
+        margin-top: 0;
+        margin-left: 0;
+        padding: 0.5em;
+        border-left: 0;
+    }
+}
+@media (max-width: 700px) {
+    .btn-sign-in {
+        width: 100%;
+    }
+}

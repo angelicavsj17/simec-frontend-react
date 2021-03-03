@@ -1,0 +1,14 @@
+.form-check {
+    display: flex !important;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+}
+.form-check input {
+    width: fit-content;
+    align-self: center;
+    margin-right: 1em;
+}
+.form-check label {
+    color: black;
+    font-size: 0.8em;
+}

@@ -1,0 +1,42 @@
+.contact-form {
+    width: 80%;
+    margin: 1em auto;
+}
+.contact-form > button {
+    background-color: #50b9ea;
+    padding: 0.5em 1em;
+    color: white;
+    border-radius: 1em;
+    border: 0;
+    font-size: 1.3em;
+    -webkit-box-shadow: 0px 0px 51px 0px #50b9ea;
+    -moz-box-shadow: 0px 0px 51px 0px #50b9ea;
+    box-shadow: 0px 0px 51px 0px #50b9ea;
+    margin: auto;
+    display: flex;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.terms-help > input {
+    margin: 0 0.5em;
+}
+.help-frequent-container {
+    width: 80%;
+    margin: auto;
+}
+@media (max-width: 1000px) {
+    .contact-form {
+        width: 70%;
+    }
+    .help-frequent-container {
+        width: 70%;
+    }
+}
+@media (max-width: 800px) {
+    .contact-form {
+        width: 100%;
+    }
+    .help-frequent-container {
+        width: 100%;
+    }
+}

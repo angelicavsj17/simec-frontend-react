@@ -1,0 +1,22 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+.f-1-5em {
+    font-size: 1.5em;
+}
+.color-black {
+    color: black;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.text-align-center {
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .text-align-start-800 {
+        text-align: start !important;
+    }
+}

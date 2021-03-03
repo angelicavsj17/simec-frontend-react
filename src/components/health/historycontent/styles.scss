@@ -1,0 +1,23 @@
+.history-box {
+    color: black;
+    padding: 1em;
+}
+.history-box > div {
+    width: 100%;
+    display: flex;
+    margin: 2em 0;
+}
+.history-box > div > div {
+    width: 50%;
+    padding: 1em;
+}
+@media (max-width: 1000px) {
+    .history-box > div {
+        width: 100%;
+        display: block;
+    }
+    .history-box > div > div {
+        width: 100%;
+        border: 0;
+    }
+}

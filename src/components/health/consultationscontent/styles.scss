@@ -1,0 +1,47 @@
+@import "../../../styles/_variables";
+.consultation-container {
+    width: 100%;
+    display: flex;
+}
+.consultation-column {
+    width: 20%;
+    text-align: center;
+    padding: 1em 0.5em;
+}
+
+.consultations-list-wrapper {
+    margin: 1em 0;
+}
+.consultation-action-button {
+    padding: 0.3em;
+    background-color: $bg-main-color;
+    margin: 0.2em;
+    border-radius: 0.6em;
+    color: white;
+    font-size: 0.5em;
+    display: block;
+    height: fit-content;
+}
+.consulation-th2 {
+    display: none;
+}
+@media (max-width: 1000px) {
+    .consultation-container {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+    .consultation-column {
+        width: 100%;
+        text-align: center;
+        padding: 1em 0.5em;
+        border-right: 0 !important;
+        justify-content: center;
+        display: block;
+    }
+    .consulation-th2 {
+        display: block;
+    }
+    .consulation-th {
+        display: none !important;
+    }
+}

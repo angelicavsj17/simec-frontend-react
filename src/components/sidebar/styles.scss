@@ -1,0 +1,116 @@
+@import "../../styles/_variables";
+.side-bar-left {
+    width: 350px;
+    background-color: $main-color;
+    height: 90%;
+    position: absolute;
+    z-index: 1;
+    border-bottom-left-radius: 7em;
+    border-bottom-right-radius: 7em;
+    top: 0;
+    left: 2em;
+    transition: all 1s ease-out;
+    max-height: 2000px;
+    overflow: hidden;
+}
+.side-bar-left-hide {
+    max-height: 9em !important;
+}
+.side-bar-left > i {
+    font-size: 2em;
+    display: flex;
+    width: fit-content;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.side-bar-list {
+    display: block;
+}
+.side-bar-list a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: auto;
+    padding: 1em 0;
+    font-size: 0.9em;
+    display: flex;
+    margin: 1em 0;
+}
+
+.side-bar-list a i {
+    font-size: 1.8em;
+    margin-left: 1em;
+}
+
+.side-bar-list a span {
+    margin: auto 0;
+    display: flex;
+    font-weight: 100;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+.side-bar-active span {
+    font-weight: 500 !important;
+    font-size: 1.4em !important;
+}
+.side-bar-active i {
+    font-size: 2.2em !important;
+}
+.side-bar-top-image-container {
+    padding: 0.8em;
+}
+.side-bar-top-image-container a {
+    display: flex;
+    width: fit-content;
+    justify-self: center;
+    margin: auto;
+}
+.side-bar-top-image-container a > * {
+    width: 50%;
+}
+.side-bar-top-image-container a > img {
+    width: 8em;
+    padding-right: 1em;
+    border-right: 1px solid black;
+    object-fit: contain;
+}
+.side-bar-top-image-container a div > img {
+    padding-left: 1em;
+    width: 6em;
+    object-fit: contain;
+    display: block;
+}
+@media (max-width: 800px) {
+    .side-bar-left {
+        margin: auto;
+        top: 76px;
+        height: auto !important;
+        padding-bottom: 4em;
+    }
+}
+@media (max-width: 800px) {
+    .side-bar-left {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 500px;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .doctors-container {
+        margin-left: 0;
+    }
+    .search-box > div {
+        margin: 1em auto;
+        width: auto;
+    }
+}
+@media (max-height: 700px) {
+    .side-bar-left {
+        height: auto;
+        padding-bottom: 5em;
+    }
+}

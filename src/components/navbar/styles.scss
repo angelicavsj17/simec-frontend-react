@@ -1,0 +1,183 @@
+@import "../../styles/_variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.nav-list {
+    display: flex;
+    margin-right: 0.5em;
+    height: 100%;
+}
+.nav-list div {
+    display: flex;
+    padding: 0.4em 0.8em;
+    margin: 0.5em;
+    font-size: 1rem;
+}
+
+.nav-list div a {
+    text-decoration: none;
+    color: black;
+    height: fit-content;
+    margin: auto;
+}
+
+.is-active {
+    border-bottom: 2px solid rgb(3, 115, 162);
+}
+
+.nav-logo {
+    padding: 0.8em;
+    padding-left: 2em;
+}
+.nav-logo a {
+    display: flex;
+}
+
+.nav-logo a > img {
+    width: 8em;
+    padding-right: 1em;
+    border-right: 1px solid black;
+    object-fit: contain;
+}
+.nav-logo a div > img {
+    padding-left: 1em;
+    width: 6em;
+    object-fit: contain;
+}
+.nav-logo a > div * {
+    display: block;
+}
+
+.navbar-icon {
+    display: none;
+}
+
+.nav-account img {
+    width: 4em;
+    height: auto;
+    object-fit: contain;
+    margin: 0 1em;
+    margin-right: 0;
+}
+.nav-account span {
+    display: none;
+}
+.nav-account i {
+    color: $bg-main-color;
+    font-size: 2.5em;
+}
+.sign-out-mobile {
+    display: none !important;
+}
+.nav-account-d {
+    position: absolute;
+    background-color: white;
+    border-radius: 0.5em;
+    width: 250px;
+    right: 6em;
+    top: 5.5em;
+    display: block !important;
+    padding: 0 !important;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+.nav-account-d > a {
+    width: 100%;
+    padding: 1em !important;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.nav-account-d-show {
+    max-height: 300px;
+    border: 1px solid #dfdfdf;
+}
+@media (max-width: 800px) {
+    .nav-account-d {
+        display: none !important;
+    }
+    .translate-nav {
+        transform: translate(0, 0) !important;
+    }
+    .nav-list {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 75px;
+        margin-right: 0;
+        z-index: 1;
+        transition: all 0.5s ease;
+        transform: translate(-100%, 0);
+        background-color: white;
+        right: 0;
+        bottom: 0;
+        transition: 1s ease;
+        width: 80%;
+        border-right: 1px solid #ddd;
+        z-index: 2;
+    }
+    .nav-list div {
+        background-color: white;
+        margin: 0;
+        display: flex;
+        font-size: 1.2em;
+        border-top: 1px solid #ddd;
+        font-weight: 300;
+    }
+    .is-active {
+        border: 0;
+    }
+    .navbar-icon {
+        display: flex;
+        color: $main-color;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .navbar-icon i {
+        padding: 0.68em;
+    }
+    .nav-account {
+        display: block !important;
+    }
+    .sign-out-mobile {
+        display: block !important;
+    }
+    .sign-out-mobile > a {
+        text-decoration: none;
+        color: black;
+        height: fit-content;
+        margin: auto;
+        display: block;
+        width: fit-content;
+    }
+    .nav-account a > i,
+    a > img,
+    a > div > img {
+        display: none !important;
+    }
+    .nav-account a {
+        margin: auto;
+        display: block;
+        width: fit-content;
+    }
+    .nav-account span {
+        display: flex;
+    }
+}
+@media (max-width: 900px) {
+    .nav-list {
+        margin-right: 0;
+    }
+    .nav-list div {
+        margin: 0;
+    }
+}

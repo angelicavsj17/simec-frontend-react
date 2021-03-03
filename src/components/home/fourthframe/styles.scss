@@ -1,0 +1,43 @@
+.fourthframe-container {
+    display: flex;
+}
+.fourth-half {
+    width: 50%;
+}
+.fourth-half > img {
+    width: 100%;
+}
+.fourth-half > h2 {
+    color: black;
+    text-align: end;
+    padding-bottom: 1em;
+    font-size: 2.5em;
+    border-bottom: 3px solid rgb(48 103 178);
+    margin: 1em;
+}
+.fourth-half > p {
+    color: black;
+    margin: 2em auto;
+    width: 90%;
+    text-align: end;
+}
+@media (max-width: 1000px) {
+    .fourthframe-container {
+        display: block;
+    }
+    .fourth-half {
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .fourth-half > h2 {
+        margin: 0.5em;
+        font-size: 1.5em;
+    }
+    .fourth-half > p {
+        text-align: start;
+    }
+    .fourth-half > h2 {
+        text-align: start;
+    }
+}

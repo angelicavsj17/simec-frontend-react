@@ -1,0 +1,14 @@
+.accounts-background {
+    width: 100%;
+}
+.accounts-background > img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+@media (max-width: 800px) {
+    .accounts-background > img {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+.receipts-list-wrapper {
+    margin: 1em 0;
+}
+.receipts-th {
+    width: 100%;
+}
+.receipts-column {
+    width: 20%;
+    text-align: center;
+    padding: 1em 0.5em;
+}
+.receipt-container {
+    width: 100%;
+    display: flex;
+}
+.receipt-th2 {
+    display: none !important;
+}
+.d-none {
+    display: none;
+}
+@media (max-width: 1000px) {
+    .receipt-th2 {
+        display: block !important;
+    }
+    .receipts-th {
+        display: none !important;
+    }
+    .receipt-container {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+    .receipts-column {
+        width: 100%;
+        border-right: 0 !important;
+    }
+}

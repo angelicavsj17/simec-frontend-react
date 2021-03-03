@@ -1,0 +1,245 @@
+{
+    "specialyst": [
+        "Ortopedista"
+    ],
+    "cities": [
+        "Quito",
+        "Guayaquil"
+    ],
+    "exams": [
+        {
+            "id": 0,
+            "date": "4/3/2020",
+            "doctor": "Carlos Eduardo Orozco",
+            "exam": "",
+            "result": ""
+        },
+        {
+            "id": 1,
+            "date": "4/3/2020",
+            "doctor": "Juan Fernando Pérez del Corral",
+            "exam": "",
+            "result": ""
+        },
+        {
+            "id": 2,
+            "date": "4/3/2020",
+            "doctor": "María Soto de De Torres",
+            "exam": "",
+            "result": ""
+        },
+        {
+            "id": 3,
+            "date": "4/3/2020",
+            "doctor": "Marcos Zabala La Paz",
+            "exam": "",
+            "result": ""
+        }
+    ],
+    "doctors": [
+        {
+            "name": "Carlos Eduardo Orozco",
+            "id": 1,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "643773443",
+            "description": ""
+        },
+        {
+            "name": "Juan Fernando Pérez del Corral",
+            "id": 2,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "76536463",
+            "description": ""
+        },
+        {
+            "name": "María Soto de De Torres",
+            "id": 3,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "73466347",
+            "description": ""
+        },
+        {
+            "name": "Marcos Zabala La Paz",
+            "id": 4,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "6437743",
+            "description": ""
+        },
+        {
+            "name": "Pablo La Merced Herrera",
+            "id": 5,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "734834",
+            "description": ""
+        },
+        {
+            "name": "Daniel La Roche Zuluaga",
+            "id": 6,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "734384",
+            "description": ""
+        },
+        {
+            "name": "Aguayo González",
+            "id": 7,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "6437473",
+            "description": ""
+        },
+        {
+            "name": "Flores Silva",
+            "id": 13,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "6437743",
+            "description": "description"
+        },
+        {
+            "name": "GONZÁLEZ DÍAZ",
+            "id": 14,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "7537483",
+            "description": "description"
+        },
+        {
+            "name": "Gómez Vargas",
+            "id": 15,
+            "specialty": "Ortopedista",
+            "place": "Quito",
+            "direction": "Direction",
+            "number": "6556776",
+            "description": ""
+        },
+        {
+            "name": "Chávez Heredia",
+            "id": 8,
+            "specialty": "Ortopedista",
+            "place": "Guayaquil",
+            "direction": "Direction",
+            "number": "6556776",
+            "description": ""
+        },
+        {
+            "name": "Cortés Lagunes",
+            "id": 9,
+            "specialty": "Ortopedista",
+            "place": "Guayaquil",
+            "direction": "Direction",
+            "number": "6556776",
+            "description": ""
+        },
+        {
+            "name": "Delgado Barrón",
+            "id": 10,
+            "specialty": "Ortopedista",
+            "place": "Guayaquil",
+            "direction": "Direction",
+            "number": "6556776",
+            "description": ""
+        },
+        {
+            "name": "Espejo Ramos",
+            "id": 11,
+            "specialty": "Ortopedista",
+            "place": "Guayaquil",
+            "direction": "Direction",
+            "number": "6556776",
+            "description": ""
+        },
+        {
+            "name": "Flores Aguilar",
+            "id": 12,
+            "specialty": "Ortopedista",
+            "place": "Guayaquil",
+            "direction": "Direction",
+            "number": "6556776",
+            "description": ""
+        }
+    ],
+    "consultations": [
+        {
+            "id": 1,
+            "date": "4/3/2020",
+            "doctor": "Juan Fernando Pérez del Corral",
+            "speciality": "Ortopedista",
+            "diagnosis": "Otras inestabilidades articulares",
+            "action": [
+                "Pedido",
+                "Receta",
+                "Certificado",
+                "Facturas"
+            ]
+        },
+        {
+            "id": 2,
+            "date": "8/5/2020",
+            "doctor": "Marcos Zabala La Paz",
+            "speciality": "Ortopedista",
+            "diagnosis": "Otras inestabilidades articulares",
+            "action": [
+                "Pedido",
+                "Receta",
+                "Certificado",
+                "Facturas"
+            ]
+        }
+    ],
+    "receipts": [
+        {
+            "id": 0,
+            "date": "4/3/2020",
+            "doctor": "Juan Fernando Pérez del Corral",
+            "receipt": "",
+            "invoice": ""
+        },
+        {
+            "id": 1,
+            "date": "4/3/2020",
+            "doctor": "María Soto de De Torres",
+            "receipt": "",
+            "invoice": ""
+        }
+    ],
+    "citizens": [
+        "Ecuador",
+        "Panamá",
+        "Colombia",
+        "Mexico"
+    ],
+    "bloodTypes": [
+        "A +",
+        "A -",
+        "B +",
+        "B -",
+        "O +",
+        "O -",
+        "AB +",
+        "AB -"
+    ],
+    "genders": [
+        "Hombre",
+        "Mujer",
+        "Otros"
+    ],
+    "lateralities": [
+        "Diestro",
+        "Zurdo"
+    ]
+}

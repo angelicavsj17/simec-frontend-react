@@ -1,0 +1,102 @@
+@import "../../../styles/_variables";
+.personal-info-container {
+    width: 100%;
+    padding: 2em;
+    background-color: rgb(238, 238, 238);
+}
+.personal-info-container > img {
+    width: 150px;
+    margin: auto;
+    display: flex;
+}
+.personal-info-container > h2 {
+    width: fit-content;
+    margin: 1em auto;
+    font-size: 2em;
+    border-top: 2px solid $second-color;
+    border-bottom: 2px solid $second-color;
+}
+.form-profile {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-profile > h3 {
+    display: block;
+    width: 100%;
+}
+.form-profile .form-group-profile {
+    width: 50%;
+    margin: 1em 0;
+}
+.form-profile .form-group-text > * {
+    display: block;
+}
+.form-profile .form-group-profile .form-group-text-wrapper {
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+.form-group-text-wrapper > input {
+    border: 0 !important;
+    outline: none;
+    background-color: transparent;
+    padding: 0.5em;
+    width: 100%;
+}
+.form-group-select {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.1em;
+    height: fit-content;
+    margin-right: 2em;
+}
+.form-profile > button {
+    background-color: $third-color;
+    padding: 0.5em 1em;
+    color: white;
+    border-radius: 1em;
+    border: 0;
+    font-size: 1.3em;
+    -webkit-box-shadow: 0px 0px 51px 0px #50b9ea;
+    -moz-box-shadow: 0px 0px 51px 0px #50b9ea;
+    box-shadow: 0px 0px 51px 0px #50b9ea;
+    margin: auto;
+    display: flex;
+    margin-top: 1em;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .form-profile {
+        width: 85%;
+        margin-left: 5em;
+    }
+    .form-profile .form-group-profile {
+        width: 100%;
+    }
+    .personal-info-container > h2 {
+        // margin: 1em auto;
+        width: 70%;
+    }
+}
+@media (max-width: 800px) {
+    .form-profile {
+        margin-left: 0;
+        margin: auto;
+        width: 100%;
+    }
+    .form-profile .form-group-profile {
+        width: 100%;
+    }
+    .form-profile .form-group-profile .form-group-text-wrapper {
+        width: 100%;
+    }
+    .form-group-select {
+        margin: 0;
+    }
+    .personal-info-container > h2 {
+        width: 100%;
+    }
+}

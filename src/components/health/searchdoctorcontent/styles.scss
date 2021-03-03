@@ -1,0 +1,164 @@
+@import "../../../styles/_variables";
+.doctors-list {
+    display: grid;
+    /* grid-template-columns: repeat(16, 1fr); */
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    gap: 1em;
+    /* width: 400%; */
+    -webkit-overflow-scrolling: auto;
+    overflow: hidden;
+    width: 533.333%;
+    grid-template-columns: repeat(16, 1fr);
+    margin: 1em 0;
+}
+
+.doctors-container-list {
+    overflow: hidden;
+}
+
+.doctors-list-static {
+    position: relative;
+    margin: 1em 0;
+}
+.doctors-list > .doctor-list-item {
+    align-items: center;
+    display: grid;
+    cursor: pointer;
+}
+.doctors-list > .doctor-list-item > img {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    align-self: center;
+    border: 0.3em solid $fourth-color;
+    border-radius: 50%;
+}
+
+.search-right-top {
+    top: 1em;
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.doctor-active {
+    width: 80% !important;
+    padding: 5px;
+}
+
+.doctor-chevron-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    height: fit-content;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.doctor-chevron-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    height: fit-content;
+    font-size: 3em;
+    cursor: pointer;
+}
+.doctor-info {
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin-bottom: 1em;
+}
+.doctor-info2 > * {
+    margin: 0 1em;
+}
+.doctor-icons i {
+    font-size: 1.4em;
+    color: $ic-color;
+}
+
+.doctor-name-desc {
+    width: 80%;
+    display: block;
+    margin: 1em 0;
+}
+.doctor-name-desc h5 {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.doctor-name-desc h3 {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 100;
+}
+.doctor-icons {
+    height: fit-content;
+    align-self: flex-end;
+    margin: 1em 0;
+}
+.doctor-icons i {
+    margin: 0 0.3em;
+    cursor: pointer;
+}
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #1a3458;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 1em auto;
+}
+
+.schedule-appointment-button > button {
+    background-color: #50b9ea;
+    border: 0;
+    color: white;
+    padding: 0.3em 1em;
+    border-radius: 0.4em;
+    font-size: 1.4em;
+    margin: 1em auto;
+    display: block;
+    font-weight: 100;
+    width: 300px;
+    -webkit-box-shadow: 0px 0px 51px 0px #50b9ea;
+    -moz-box-shadow: 0px 0px 51px 0px #50b9ea;
+    box-shadow: 0px 0px 51px 0px #50b9ea;
+    cursor: pointer;
+    outline: none;
+}
+.schedule-appointment-button {
+    text-decoration: none;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 1100px) {
+    .doctor-info {
+        display: block !important;
+    }
+    .doctor-name-desc {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width: 800px) {
+    .schedule-appointment-button > button {
+        width: 90%;
+    }
+}
